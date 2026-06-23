@@ -20,21 +20,15 @@ import MemojiAvatarYellow from "../assets/me-yellow.webp";
         <h6 class="text-sm font-light m-0 text-darkslate-300">welcome</h6>
 
         <p class="sr-only">
-          Hi, I'm {SITE.author.fullName}, a software developer with strong focus on
-          the user experience, animations, micro interactions and SEO. Feel
-          free to reach out to me if you have any project in mind, want to
-          collaborate, or just want to say hello.
+          Hi, I'm {SITE.author.fullName}, an AI Engineer specializing in deep learning, computer vision, and building intelligent automation systems. Feel free to reach out to me if you have any project in mind, want to collaborate on AI architectures, or just want to say hello.
         </p>
         <p aria-hidden="true" class="m-0 font-light text-md">
           <span>
-            Hi, I'm <b class="font-bold">{SITE.author.fullName}</b>, a software
-            developer with strong focus on the user experience, animations,
-            micro interactions and SEO.
+            Hi, I'm <b class="font-bold">{SITE.author.fullName}</b>, an AI Engineer specializing in deep learning, computer vision, and building intelligent automation systems.
           </span>
           <br />
           <span class="block mt-2">
-            Feel free to reach out to me if you have any project in mind, want
-            to collaborate, or just want to say hello.
+            Feel free to reach out to me if you have an intelligent automation or model architecture project in mind, want to collaborate, or just want to say hello.
           </span>
         </p>
       </div>
@@ -60,14 +54,15 @@ import MemojiAvatarYellow from "../assets/me-yellow.webp";
               >
             </Button>
           </a>
-          <a href={LINKS.dribble} aria-label="dribble profile" target="_blank">
+          {/* Dribbble profile hidden as it is not needed for AI engineering portfolios */}
+          {/* <a href={LINKS.dribble} aria-label="dribble profile" target="_blank">
             <Button aria-label="dribble profile">
               <Icon name="ri:dribbble-fill" />
               <span class="sr-only" data-umami-event="Dribble button"
                 >Dribble Profile</span
               >
             </Button>
-          </a>
+          </a> */}
           <Tooltip client:visible>
             <Button aria-label="easter egg btn">
               <Icon name="ri:emotion-laugh-line" />
@@ -79,11 +74,11 @@ import MemojiAvatarYellow from "../assets/me-yellow.webp";
         </div>
         <Button
           aria-label="book a call"
-          data-cal-link={SITE.cal.username}
+          data-cal-link="muhammad-sarim-qureshi-5vurkz/15min"
         >
           <span
             data-umami-event="Book a call"
-            data-cal-link={SITE.cal.username}
+            data-cal-link="muhammad-sarim-qureshi-5vurkz/15min"
             class="font-bold whitespace-nowrap">Book a call</span
           >
         </Button>

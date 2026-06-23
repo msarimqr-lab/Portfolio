@@ -6,37 +6,30 @@ import { SITE } from "../site-config";
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About me">
   <div class="flex flex-col gap-2">
     <p class="sr-only">
-      Hi, I'm {SITE.author.firstName}, a full stack software developer (frontend-focused) from {SITE.location.countryName}. My primary
-      tools of choice includes: JavaScript, React, Solidjs, Astro, Svelte,
-      Nodejs. I also have knowledge of SEO and design. Beyond coding, I'm passionate about design, illustration,
-      animation and 3D modelling and traveling. An unusual hobby of mine is
-      collecting vintage passports, they're interesting pieces of history to me.
-      While I have some preferred tools, I always choose the best one for the
-      job, even if it's not on my usual list. My goal is to find the right
-      solution for each project.
+      Hi, I'm {SITE.author.firstName}, an AI Engineer and Computer Science student specializing in deep learning, computer vision, and building intelligent automation systems.
     </p>
-    <div aria-hidden="true" class="text-sm font-light">
-      <p class="text-sm font-light">
-        Hi, I'm {SITE.author.firstName}, a full stack software developer (frontend-focused) from {SITE.location.countryName}.
+    <div aria-hidden="true" class="text-sm font-light flex flex-col gap-1">
+      <p>
+        Hi, I'm {SITE.author.firstName}, an AI Engineer based in {SITE.location.countryName}, specializing in training deep neural architectures and deploying interpretability frameworks.
       </p>
-      <br />
-      My primary tools of choice includes:
-      <ul class="list-disc list-inside">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Solidjs</li>
-        <li>Astro</li>
-        <li>Svelte</li>
-        <li>Nodejs</li>
+      
+      <p class="font-medium text-white mt-1">Core Tech Stack:</p>
+      <ul class="list-disc list-inside text-xs grid grid-cols-2 gap-x-2 gap-y-0.5">
+        <li>Python</li>
+        <li>PyTorch & TF</li>
+        <li>Computer Vision</li>
+        <li>XGBoost / SHAP</li>
+        <li>n8n Automation</li>
+        <li>Machine Learning</li>
       </ul>
-      <p class="text-sm font-light mt-2">
-        I also have knowledge of SEO and UX/UI.
-      </p>
     </div>
-    <p class="text-sm font-light">
-      Beyond coding, I'm passionate about design, illustration, animation and 3D
-      modelling and traveling. An unusual hobby of mine is collecting vintage
-      passports, they're interesting pieces of history to me.
-    </p>
+
+    <div class="text-xs font-light flex flex-col gap-1 mt-1 border-t border-neutral-800 pt-2">
+      <p class="font-medium text-white text-sm">Key Engineering Projects:</p>
+      <p>• <strong>EduAgent:</strong> YouTube RAG pipeline using Llama for study assistance.</p>
+      <p>• <strong>CropDoc:</strong> Custom CNN for betel leaf crop disease classification.</p>
+      <p>• <strong>Explainable AI:</strong> Heart disease diagnostics using XGBoost and SHAP/LIME.</p>
+      <p>• <strong>Affective Recs:</strong> Real-time music/movie recommendation engines via DeepFace.</p>
+    </div>
   </div>
 </Card>

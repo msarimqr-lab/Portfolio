@@ -1,49 +1,30 @@
 export const SITE = {
-  site: {
-    url: "https://gianmarcocavallo.com/",
+  "site": {
+    "url": "https://msarimqr-lab.github.io/"
   },
-  author: {
-    firstName: "Gianmarco",
-    lastName: "Cavallo",
-    fullName: "Gianmarco Cavallo",
-    shortName: "Gianmarco",
-    jobTitle: "Freelance Full Stack Developer",
-    twitterHandle: "gianmarcocavallo", // without "@"
+  "author": {
+    "firstName": "Muhammad Sarim",
+    "lastName": "Rafique Qureshi",
+    "fullName": "M. Sarim Qureshi",
+    "shortName": "Muhammad Sarim",
+    "jobTitle": "AI Engineer"
   },
-  location: {
-    countryName: "Italy",
-    countryCode: "IT",
-    timezone: "Europe/Rome",
+  "location": {
+    "countryName": "Pakistan",
+    "countryCode": "PK",
+    "timezone": "Asia/Karachi"
   },
-  links: {
-    github: "https://github.com/Ladvace",
-    linkedin: "https://www.linkedin.com/in/gianmarco-cavallo/",
-    medium: "https://ladvace.medium.com/",
-    discord: "https://discordapp.com/users/163300027618295808",
-    dribble: "https://dribbble.com/Ladvace_Jace",
-    email: "contact@gianmarcocavallo.com",
+  "links": {
+    "github": "https://github.com/msarimqr-lab",
+    "linkedin": "https://www.linkedin.com/in/muhammad-sarim-qureshi-3477a3378/",
+    "email": "msarimqr@gmail.com"
   },
-  cal: {
-    username: "ladvace",
-    durationNamespace: "15min",
-    origin: "https://cal.com",
+  "cal": {
+    "username": "muhammad-sarim-qureshi-5vurkz",
+    "durationNamespace": "15min",
+    "origin": "https://cal.com"
   },
-  visitedCountries: [
-    "France",
-    "China",
-    "Italy",
-    "Sri Lanka",
-    "Uzbekistan",
-    "Turkey",
-    "Greece",
-    "Malta",
-    "Hungary",
-    "Portugal",
-    "Morocco",
-    "Greece",
-    "Spain",
-    "Netherlands",
-    "Belgium",
-    "Spain",
-  ],
+  "visitedCountries": [
+    "Pakistan"
+  ]
 };
