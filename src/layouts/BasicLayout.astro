@@ -12,7 +12,7 @@ interface Props {
 }
 
 const { title, description, page, pubDate } = Astro.props;
-const image = `${Astro.url.origin}/og-image.png`;
+const image = `${Astro.url.origin}/og-image11.png`;
 
 const schema =
   page !== "blog"
@@ -22,7 +22,7 @@ const schema =
         name: SITE.author.fullName,
         url: Astro.url.origin,
         sameAs: [LINKS.linkedin, LINKS.github],
-        image: `${Astro.url.origin}/og-image.png`,
+        image: `${Astro.url.origin}/og-image1.png`,
         jobTitle: SITE.author.jobTitle,
         knowsAbout: ["Artificial Intelligence", "Deep Learning", "Computer Vision", "Machine Learning", "Python", "Intelligent Automation", "Large Language Models", "n8n Pipelines"],
         worksFor: {
@@ -48,7 +48,7 @@ const schema =
         },
         headline: title || title,
         description: description || title,
-        image: `${Astro.url.origin}/og-image.png`, //TODO: dynamic
+        image: `${Astro.url.origin}/og-image1.png`, //TODO: dynamic
         author: {
           "@type": "Person",
           name: SITE.author.shortName,
@@ -60,7 +60,7 @@ const schema =
           name: SITE.author.shortName,
           logo: {
             "@type": "ImageObject",
-            url: `${Astro.url.origin}/og-image.png`,
+            url: `${Astro.url.origin}/og-image1.png`,
           },
         },
         datePublished: pubDate || new Date().toISOString(),
@@ -95,7 +95,7 @@ const schema =
     <meta property="og:site_name" content={SITE.author.fullName} />
     <meta property="og:locale" content="en_US" />
     <meta
-      content={image || `${Astro.url.origin}/og-image.png`}
+      content={image || `${Astro.url.origin}/og-image1.png`}
       property="og:image"
     />
     <meta property="og:image:alt" content={description} />
@@ -105,7 +105,7 @@ const schema =
     <meta content={description} name="twitter:description" />
     <meta name="twitter:creator" content={`@${SITE.author.twitterHandle}`} />
     <meta
-      content={image || `${Astro.url.origin}/og-image.png`}
+      content={image || `${Astro.url.origin}/og-image1.png`}
       name="twitter:image"
     />
 
