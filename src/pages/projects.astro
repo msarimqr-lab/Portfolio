@@ -180,69 +180,77 @@ import XaiLime from "../assets/illustrations/xai-lime-details.png";
     </section>
 
     {/* PROJECT MODULE 2: EXPLAINABLE AI */}
-    <section class="scroll-section border-t border-neutral-800/40 pt-12 pl-0 lg:pl-16 relative z-10 custom-section-xai" data-project="xai">
-      <div class="mb-8 reveal-element">
-        <span class="text-xs font-mono uppercase px-2 py-1 bg-blue-950 text-blue-400 rounded-md border border-blue-800">Model Interpretability</span>
-        <h2 class="text-2xl font-bold mt-4 text-white section-heading">Explainable AI (XAI) Medical Diagnostic Engine</h2>
-        <p class="text-sm font-light text-neutral-400 mt-2 max-w-4xl">
-          An analytical forecasting panel predicting cardiovascular vulnerabilities incorporating SHAP global value calculations and localized additive LIME feature dependencies.
-        </p>
+<section class="scroll-section border-t border-neutral-800/40 pt-12 pl-0 lg:pl-16 relative z-10 custom-section-xai" data-project="xai">
+  <div class="mb-8 reveal-element">
+    <span class="text-xs font-mono uppercase px-2 py-1 bg-blue-950 text-blue-400 rounded-md border border-blue-800">Model Interpretability</span>
+    <h2 class="text-2xl font-bold mt-4 text-white section-heading">Explainable AI (XAI) Medical Diagnostic Engine</h2>
+    <p class="text-sm font-light text-neutral-400 mt-2 max-w-4xl">
+      An analytical forecasting panel predicting cardiovascular vulnerabilities incorporating SHAP global value calculations and localized additive LIME feature dependencies.
+    </p>
 
-        {/* --- LIVE INTERACTIVE INJECT BUTTON --- */}
-        <div class="mt-6">
-          <a 
-            href="https://xaiheartdiseasedetector-9nqrzrypucb4fxfszwbndp.streamlit.app/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-mono text-xs font-bold uppercase tracking-wider transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] border border-blue-400/20 group"
-          >
-            ⚡ TRY OUR XAI PROJECT
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
-        </div>
-      </div>
+    {/* --- LIVE INTERACTIVE INJECT BUTTON & SECURE KEYS --- */}
+    <div class="mt-6">
+      <a 
+        href="https://sarimportfolio.streamlit.app" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-mono text-xs font-bold uppercase tracking-wider transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] border border-blue-400/20 group"
+      >
+        ⚡ TRY OUR XAI PROJECT
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>
+      </a>
+      
+      {/* --- MINIMAL MONOSPACE VISITOR ACCESS PANEL --- */}
+      <p class="text-[11px] font-mono text-neutral-500 mt-3 flex flex-wrap items-center gap-x-2 gap-y-1">
+        <span>🔑 Guest Credentials:</span>
+        <span>username: <span class="text-neutral-300 select-all font-semibold bg-neutral-900 border border-neutral-800 px-1.5 py-0.5 rounded">admin</span></span>
+        <span class="text-neutral-700">|</span>
+        <span>password: <span class="text-neutral-300 select-all font-semibold bg-neutral-900 border border-neutral-800 px-1.5 py-0.5 rounded">cardio2026</span></span>
+      </p>
+    </div>
+  </div>
 
-      {/* --- INFINITE MARQUEE SLIDER (XAI DESKTOP INTERFACES) --- */}
-      <div class="w-full overflow-hidden relative py-4 mask-edges reveal-element delay-1">
-        <div class="flex gap-6 w-max animate-marquee-slow hover:[animation-play-state:paused]">
-          {[
-            { img: XaiLogin, title: "Secure Gateway Portal" },
-            { img: XaiBiomarkers, title: "Physiological Biomarkers" },
-            { img: XaiCalendar, title: "Age Verification Calendar" },
-            { img: XaiGauge, title: "Real-Time Risk Gauge" },
-            { img: XaiShap, title: "SHAP Global Feature Drivers" },
-            { img: XaiLime, title: "LIME Instance-Level Details" }
-          ].map((screen) => (
-            <div class="w-[320px] flex-none group relative bg-neutral-900/30 border border-neutral-800/60 p-3 rounded-2xl flex flex-col gap-3 transition-all duration-300 ease-out hover:-translate-y-2 hover:border-blue-500/40 hover:bg-neutral-900/70 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)]">
-              <div class="w-full overflow-hidden rounded-xl bg-neutral-950 aspect-[16/10] flex items-center justify-center relative">
-                <Image src={screen.img} class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-102" alt={screen.title} />
-                <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-              </div>
-              <p class="text-xs font-semibold text-neutral-400 group-hover:text-blue-400 transition-colors duration-300 px-1 text-center m-0">{screen.title}</p>
-            </div>
-          ))}
-          {/* Track Duplicate */}
-          {[
-            { img: XaiLogin, title: "Secure Gateway Portal" },
-            { img: XaiBiomarkers, title: "Physiological Biomarkers" },
-            { img: XaiCalendar, title: "Age Verification Calendar" },
-            { img: XaiGauge, title: "Real-Time Risk Gauge" },
-            { img: XaiShap, title: "SHAP Global Feature Drivers" },
-            { img: XaiLime, title: "LIME Instance-Level Details" }
-          ].map((screen) => (
-            <div class="w-[320px] flex-none group relative bg-neutral-900/30 border border-neutral-800/60 p-3 rounded-2xl flex flex-col gap-3 transition-all duration-300 ease-out hover:-translate-y-2 hover:border-blue-500/40 hover:bg-neutral-900/70 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)]">
-              <div class="w-full overflow-hidden rounded-xl bg-neutral-950 aspect-[16/10] flex items-center justify-center relative">
-                <Image src={screen.img} class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-102" alt={screen.title} />
-                <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-              </div>
-              <p class="text-xs font-semibold text-neutral-400 group-hover:text-blue-400 transition-colors duration-300 px-1 text-center m-0">{screen.title}</p>
-            </div>
-          ))}
+  {/* --- INFINITE MARQUEE SLIDER (XAI DESKTOP INTERFACES) --- */}
+  <div class="w-full overflow-hidden relative py-4 mask-edges reveal-element delay-1">
+    <div class="flex gap-6 w-max animate-marquee-slow hover:[animation-play-state:paused]">
+      {[
+        { img: XaiLogin, title: "Secure Gateway Portal" },
+        { img: XaiBiomarkers, title: "Physiological Biomarkers" },
+        { img: XaiCalendar, title: "Age Verification Calendar" },
+        { img: XaiGauge, title: "Real-Time Risk Gauge" },
+        { img: XaiShap, title: "SHAP Global Feature Drivers" },
+        { img: XaiLime, title: "LIME Instance-Level Details" }
+      ].map((screen) => (
+        <div class="w-[320px] flex-none group relative bg-neutral-900/30 border border-neutral-800/60 p-3 rounded-2xl flex flex-col gap-3 transition-all duration-300 ease-out hover:-translate-y-2 hover:border-blue-500/40 hover:bg-neutral-900/70 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)]">
+          <div class="w-full overflow-hidden rounded-xl bg-neutral-950 aspect-[16/10] flex items-center justify-center relative">
+            <Image src={screen.img} class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-102" alt={screen.title} />
+            <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          </div>
+          <p class="text-xs font-semibold text-neutral-400 group-hover:text-blue-400 transition-colors duration-300 px-1 text-center m-0">{screen.title}</p>
         </div>
-      </div>
-    </section>
+      ))}
+      {/* Track Duplicate */}
+      {[
+        { img: XaiLogin, title: "Secure Gateway Portal" },
+        { img: XaiBiomarkers, title: "Physiological Biomarkers" },
+        { img: XaiCalendar, title: "Age Verification Calendar" },
+        { img: XaiGauge, title: "Real-Time Risk Gauge" },
+        { img: XaiShap, title: "SHAP Global Feature Drivers" },
+        { img: XaiLime, title: "LIME Instance-Level Details" }
+      ].map((screen) => (
+        <div class="w-[320px] flex-none group relative bg-neutral-900/30 border border-neutral-800/60 p-3 rounded-2xl flex flex-col gap-3 transition-all duration-300 ease-out hover:-translate-y-2 hover:border-blue-500/40 hover:bg-neutral-900/70 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)]">
+          <div class="w-full overflow-hidden rounded-xl bg-neutral-950 aspect-[16/10] flex items-center justify-center relative">
+            <Image src={screen.img} class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-102" alt={screen.title} />
+            <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          </div>
+          <p class="text-xs font-semibold text-neutral-400 group-hover:text-blue-400 transition-colors duration-300 px-1 text-center m-0">{screen.title}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
   </main>
 </Layout>
 
